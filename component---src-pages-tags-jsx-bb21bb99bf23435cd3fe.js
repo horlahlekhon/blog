@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{248:function(e,t,a){"use strict";a.r(t);var n=a(1),c=(a(0),a(125)),r=a(126),d=a(264),s=a.n(d);t.default=function(e){var t=e.pageContext.tags;return Object(n.d)(c.d,null,Object(n.d)(r.b,{title:"Tags Page",headerImage:s.a},"Gatsby Tutorial Starter"),Object(n.d)(c.a,null,Object(n.d)(r.e,{list:t})))}},264:function(e,t,a){e.exports=a.p+"static/rant_page_header-a6756ee03d2167e59d4077cc52340c21.jpg"}}]);
+//# sourceMappingURL=component---src-pages-tags-jsx-bb21bb99bf23435cd3fe.js.map
