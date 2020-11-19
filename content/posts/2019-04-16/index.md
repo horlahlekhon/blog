@@ -1,7 +1,7 @@
 ---
 path: "/rants/a-matriarch-of-putple"
 cover: "./a-matriarch-of-purple.jpg"
-date: 2019-04-16 10:01:19 +0100
+date: 2019-04-16 10:01:19
 title: "A Matriarch of Purple"
 author: Lekan Adebari
 published: true

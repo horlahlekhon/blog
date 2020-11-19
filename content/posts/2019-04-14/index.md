@@ -1,7 +1,7 @@
 ---
 path: "/rants/the-day-aphorodite-danced"
 cover: "./the-day-aphrodite-danced.jpg"
-date: 2019-04-14 15:15:19 +0100
+date: 2019-04-14 15:15:19
 title: "The day Aphrodite Danced"
 author: Lekan Adebari
 published: true

@@ -1,7 +1,7 @@
 ---
 path: "/rants/blank-crossroad"
 cover: "./the-crossroad.jpg"
-date: 2019-04-13 15:15:19 +0100
+date: 2019-04-13 15:15:19
 title: "Blank CrossRoad!"
 author: Lekan Adebari
 published: true

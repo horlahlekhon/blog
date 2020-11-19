@@ -2,11 +2,11 @@
 title:  "A Yòrùbá woman: sage amongst women"
 author : Lekan Adebari
 subtitle: "An Ensembre of Beauty"
-date:   2019-04-17 16:25:19 +0100
+date:   2019-04-17 16:25:19
 category: rants
 cover: ./yoruba-woman.jpg
 excerpt_separator: <!--more-->
-tags: [poetry, writting]
+tags: [poetry, writing]
 path: /rants/yoruba-women
 excerpt: Smearing artillery of robes , a perfect frame of vivacity!
 ---

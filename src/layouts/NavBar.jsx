@@ -1,19 +1,17 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import styled from '@emotion/styled';
-import Headroom from 'react-headroom';
+import React from "react"
+import { Link } from "gatsby"
+import styled from "@emotion/styled"
+import Headroom from "react-headroom"
 // import logo from '../../static/logo/header-logo.png';
-import GitHubIcon from '@material-ui/icons/GitHub';
-import SvgIcon from '@material-ui/core/SvgIcon'
-import TwitterIcon from '@material-ui/icons/Twitter';
-
+import GitHubIcon from "@material-ui/icons/GitHub"
+import TwitterIcon from "@material-ui/icons/Twitter"
 
 
 const StyledLink = styled(Link)`
   display: flex;
   font-weight: 700;
   align-items: center;
-`;
+`
 
 const Nav = styled.nav`
   display: flex;
@@ -30,7 +28,7 @@ const Nav = styled.nav`
       color: ${props => props.theme.colors.white.grey};
     }
   }
-`;
+`
 const Name = styled.p`
   font-weight: 500;
   font-size: 1.1rem;
@@ -50,8 +48,8 @@ const Name = styled.p`
 const NavBar = () => (
   <Headroom calcHeightOnResize disableInlineStyles>
     {/* <StyledLink to="/"> */}
-      {/* <img src={logo} alt="Gatsby Logo" /> */}
-     <Nav><Link to="/"> Olalekan Adebari</Link></Nav>
+    {/* <img src={logo} alt="Gatsby Logo" /> */}
+    <Nav><Link to="/"> Olalekan Adebari</Link></Nav>
     {/* </StyledLink> */}
     <Nav>
       <Link to="/">Home</Link>
@@ -62,10 +60,10 @@ const NavBar = () => (
         <GitHubIcon />
       </a>
       <a href="https://mobile.twitter.com/1nesAndZer0s">
-        <TwitterIcon/>
+        <TwitterIcon />
       </a>
     </Nav>
   </Headroom>
-);
+)
 
-export default NavBar;
+export default NavBar

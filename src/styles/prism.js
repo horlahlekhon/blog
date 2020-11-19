@@ -1,5 +1,5 @@
-import { css } from '@emotion/core';
-import theme from '../../config/theme';
+import { css } from "@emotion/core"
+import theme from "../../config/theme"
 
 const prism = css`
   p > code,
@@ -126,6 +126,6 @@ const prism = css`
   .token.entity {
     cursor: help;
   }
-`;
+`
 
-export default prism;
+export default prism

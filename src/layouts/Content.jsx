@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from '@emotion/styled';
-import PropTypes from 'prop-types';
-import prism from '../styles/prism';
+import React from "react"
+import styled from "@emotion/styled"
+import PropTypes from "prop-types"
+import prism from "../styles/prism"
 
 const Wrapper = styled.div`
   ${prism};
@@ -57,14 +57,14 @@ const Wrapper = styled.div`
       }
     }
   }
-`;
+`
 
 const Content = ({ input }) => (
   <Wrapper dangerouslySetInnerHTML={{ __html: input }} />
-);
+)
 
-export default Content;
+export default Content
 
 Content.propTypes = {
   input: PropTypes.any.isRequired,
-};
+}

@@ -1,12 +1,12 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Layout, Container } from 'layouts';
-import { Header, TagsBlock } from 'components';
-import rantHeader from '../images/rant_page_header.jpg'
+import React from "react"
+import PropTypes from "prop-types"
+import { Container, Layout } from "layouts"
+import { Header, TagsBlock } from "components"
+import rantHeader from "../images/rant_page_header.jpg"
 
 
 const Tags = ({ pageContext }) => {
-  const { tags } = pageContext;
+  const { tags } = pageContext
 
   return (
     <Layout>
@@ -15,13 +15,13 @@ const Tags = ({ pageContext }) => {
         <TagsBlock list={tags} />
       </Container>
     </Layout>
-  );
-};
+  )
+}
 
-export default Tags;
+export default Tags
 
 Tags.propTypes = {
   pageContext: PropTypes.shape({
     tags: PropTypes.array,
   }),
-};
+}

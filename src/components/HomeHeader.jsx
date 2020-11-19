@@ -1,11 +1,10 @@
-import React from 'react';
-import styled from '@emotion/styled';
-import Img from 'gatsby-image';
-import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
+import React from "react"
+import styled from "@emotion/styled"
+import Img from "gatsby-image"
+import PropTypes from "prop-types"
 
 
-const Wrapper =  styled.header`
+const Wrapper = styled.header`
   background-image: url(${props => props.headerImage});
    @media (max-width: ${props => props.theme.breakpoints.s}) {
     -webkit-clip-path: polygon(100% 0, 0 0, 0 90%, 50% 100%, 100% 90%);
@@ -20,7 +19,7 @@ const Wrapper =  styled.header`
   }
   position: relative;
   overflow: hidden;
-`;
+`
 
 const Text = styled.div`
   color: ${props => props.theme.colors.white.base};
@@ -37,25 +36,25 @@ const Text = styled.div`
   padding: 0 2rem;
   margin-bottom: 3rem;
   align-items: center;
-`;
+`
 
 const Subtitle = styled.p`
   max-width: 650px;
   color: ${props => props.theme.colors.white.light};
-`;
+`
 
-const HomeHeader = ({ children, title, date, cover, headerImage}) => (
+const HomeHeader = ({ children, title, date, cover, headerImage }) => (
   <Wrapper headerImage={headerImage}>
-    <Img fluid={cover || {} || [] || ''} />
+    <Img fluid={cover || {} || [] || ""} />
     <Text>
       <h1>{title}</h1>
       <h3>{date}</h3>
       {children && <Subtitle>{children}</Subtitle>}
     </Text>
   </Wrapper>
-);
+)
 
-export default HomeHeader;
+export default HomeHeader
 
 HomeHeader.propTypes = {
   children: PropTypes.oneOfType([PropTypes.node, PropTypes.bool]),
@@ -67,11 +66,11 @@ HomeHeader.propTypes = {
     PropTypes.object,
     PropTypes.bool,
   ]),
-};
+}
 
 HomeHeader.defaultProps = {
   children: false,
   cover: false,
   date: false,
   title: false,
-};
+}

@@ -1,9 +1,5 @@
-import React from 'react';
-import styled from '@emotion/styled';
-import GitHubIcon from '@material-ui/icons/GitHub';
-import TwitterIcon from '@material-ui/icons/Twitter';
-
-
+import React from "react"
+import styled from "@emotion/styled"
 
 
 const Wrapper = styled.footer`
@@ -18,28 +14,38 @@ const Wrapper = styled.footer`
   @media (max-width: ${props => props.theme.breakpoints.s}) {
     padding-top: 7rem;
   }
-`;
+`
 
 const Text = styled.div`
-  display: flex-end;
+  padding: 0px 500px;
+  display: flex;
+  text-decoration: underline;
+  flex-direction: row;
+  justify-content: space-between;
   margin: 0;
-  text-align: center;
+  //text-align: center;
   color: ${props => props.theme.colors.white.light};
   a {
     color: ${props => props.theme.colors.white.base};
   }
-`;
+`
 
 const Footer = () => (
   <Wrapper>
     <Text>
       <a href="https://github.com/horlahlekhon">
-        <GitHubIcon />
+        Github
       </a>
       <a href="https://mobile.twitter.com/1nesAndZer0s">
-        <TwitterIcon />
+        Twitter
+      </a>
+      <a href="">
+        Something
+      </a>
+      <a href="">
+        Something else
       </a>
     </Text>
   </Wrapper>
-);
-export default Footer;
+)
+export default Footer

@@ -1,12 +1,10 @@
-import React from 'react';
-import styled from '@emotion/styled';
-import Img from 'gatsby-image';
-import PropTypes from 'prop-types';
-import blogHeader from '../images/lazypatriot-header.jpg'
-import { graphql } from 'gatsby';
+import React from "react"
+import styled from "@emotion/styled"
+import Img from "gatsby-image"
+import PropTypes from "prop-types"
 
 
-const Wrapper =  styled.header`
+const Wrapper = styled.header`
   background-image: url(${props => props.headerImage});
   -webkit-clip-path: polygon(100% 0, 0 0, 0 70%, 50% 100%, 100% 70%);
   clip-path: polygon(100% 0, 0 0, 0 70%, 50% 100%, 100% 70%);
@@ -23,7 +21,7 @@ const Wrapper =  styled.header`
   }
   position: relative;
   overflow: hidden;
-`;
+`
 
 const Text = styled.div`
   color: ${props => props.theme.colors.white.base};
@@ -40,16 +38,16 @@ const Text = styled.div`
   padding: 0 2rem;
   margin-bottom: 3rem;
   align-items: center;
-`;
+`
 
 const Subtitle = styled.p`
   max-width: 650px;
   color: ${props => props.theme.colors.white.light};
-`;
+`
 
-const Header = ({ children, title, date, cover, headerImage}) => (
+const Header = ({ children, title, date, cover, headerImage }) => (
   <Wrapper headerImage={headerImage}>
-    <Img fluid={cover || {} || [] || ''} />
+    <Img fluid={cover || {} || [] || ""} />
     <Text>
       <h1>{title}</h1>
       <h3>{date}</h3>
@@ -57,9 +55,9 @@ const Header = ({ children, title, date, cover, headerImage}) => (
       {children && <Subtitle>{children}</Subtitle>}
     </Text>
   </Wrapper>
-);
+)
 
-export default Header;
+export default Header
 
 Header.propTypes = {
   children: PropTypes.oneOfType([PropTypes.node, PropTypes.bool]),
@@ -71,11 +69,11 @@ Header.propTypes = {
     PropTypes.object,
     PropTypes.bool,
   ]),
-};
+}
 
 Header.defaultProps = {
   children: false,
   cover: false,
   date: false,
   title: false,
-};
+}

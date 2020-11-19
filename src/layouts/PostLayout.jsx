@@ -1,13 +1,13 @@
-import React, { Fragment } from 'react';
-import { ThemeProvider } from 'emotion-theming';
-import { css, Global } from '@emotion/core';
-import PropTypes from 'prop-types';
-import 'typeface-open-sans';
-import 'typeface-candal';
-import { SEO } from 'components';
-import { NavBar, Footer } from 'layouts';
-import theme from '../../config/theme';
-import headroom from '../styles/headroom';
+import React, { Fragment } from "react"
+import { ThemeProvider } from "emotion-theming"
+import { css, Global } from "@emotion/core"
+import PropTypes from "prop-types"
+import "typeface-open-sans"
+import "typeface-candal"
+import { SEO } from "components"
+import { Footer, NavBar } from "layouts"
+import theme from "../../config/theme"
+import headroom from "../styles/headroom"
 
 const PostLayout = ({ children, postImage }) => (
   <ThemeProvider theme={theme}>
@@ -37,7 +37,7 @@ const PostLayout = ({ children, postImage }) => (
             
           }
           body {
-            background: url(${postImage});
+            //background: url(${postImage});
             display: flex;
             flex-direction: column;
             min-height: 100vh;
@@ -65,11 +65,11 @@ const PostLayout = ({ children, postImage }) => (
       <Footer />
     </Fragment>
   </ThemeProvider>
-);
+)
 
-export default PostLayout;
+export default PostLayout
 
 PostLayout.propTypes = {
   children: PropTypes.oneOfType([PropTypes.array, PropTypes.node]).isRequired,
   postImage: PropTypes.string.isRequired,
-};
+}

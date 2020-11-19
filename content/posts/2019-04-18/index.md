@@ -2,7 +2,7 @@
 title:  "He who Borrows another day"
 author : Lekan Adebari
 subtitle: "An unkempt tomorrow"
-date:   2019-04-18 10:01:19 +0100
+date:   2019-04-18 10:01:19
 category: rants
 cover: ./he-who-borrows-another-day.jpg
 excerpt_separator: <!--more-->

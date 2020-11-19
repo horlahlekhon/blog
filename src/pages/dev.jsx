@@ -1,17 +1,17 @@
-import React from 'react';
-import { graphql } from 'gatsby';
-import Helmet from 'react-helmet';
-import PropTypes from 'prop-types';
-import { Header, BlogList } from 'components';
-import { Layout } from 'layouts';
-import devHeader from '../images/tech_page_header.jpg'
+import React from "react"
+import { graphql } from "gatsby"
+import Helmet from "react-helmet"
+import PropTypes from "prop-types"
+import { BlogList, Header } from "components"
+import { Layout } from "layouts"
+import devHeader from "../images/tech_page_header.jpg"
 
 const Dev = ({ data }) => {
-  const { edges } = data.allMarkdownRemark;
+  const { edges } = data.allMarkdownRemark
   return (
     <Layout>
-      <Helmet title={'tech - Page'} />
-      <Header title="Technologies" headerImage={devHeader} >Software Affinities</Header>
+      <Helmet title={"tech - Page"} />
+      <Header title="Technologies" headerImage={devHeader}>Software Affinities</Header>
       {edges.map(({ node }) => (
         <BlogList
           key={node.id}
@@ -24,10 +24,10 @@ const Dev = ({ data }) => {
         />
       ))}
     </Layout>
-  );
-};
+  )
+}
 
-export default Dev;
+export default Dev
 
 Dev.propTypes = {
   data: PropTypes.shape({
@@ -44,11 +44,11 @@ Dev.propTypes = {
               tags: PropTypes.array,
             }),
           }),
-        }).isRequired
+        }).isRequired,
       ),
     }),
   }),
-};
+}
 
 export const query = graphql`
   query {
@@ -78,4 +78,4 @@ export const query = graphql`
       }
     }
   }
-`;
+`
