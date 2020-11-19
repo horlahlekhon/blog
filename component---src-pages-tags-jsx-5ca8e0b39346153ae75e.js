@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[10],{Du2A:function(t,e,a){t.exports=a.p+"static/rant_page_header-a6756ee03d2167e59d4077cc52340c21.jpg"},PcuZ:function(t,e,a){"use strict";a.r(e);a("q1tI");var n=a("tCqT"),c=a("TiLl"),r=a("Du2A"),u=a.n(r),d=a("qKvR");e.default=function(t){var e=t.pageContext.tags;return Object(d.d)(n.d,null,Object(d.d)(c.b,{title:"Tags Page",headerImage:u.a},"Gatsby Tutorial Starter"),Object(d.d)(n.a,null,Object(d.d)(c.e,{list:e})))}}}]);
+//# sourceMappingURL=component---src-pages-tags-jsx-5ca8e0b39346153ae75e.js.map
