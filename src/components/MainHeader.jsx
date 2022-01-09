@@ -2,29 +2,39 @@ import React from "react"
 import styled from "@emotion/styled"
 import Img from "gatsby-image"
 import PropTypes from "prop-types"
+import headerLogo from '../images/header-logo.png'
+import Footer from "../layouts/Footer"
 
 
 const Wrapper = styled.header`
   background-image: url(${props => props.headerImage});
-  -webkit-clip-path: polygon(100% 0, 0 0, 0 70%, 50% 100%, 100% 70%);
-  clip-path: polygon(100% 0, 0 0, 0 70%, 50% 100%, 100% 70%);
-  @media (max-width: ${props => props.theme.breakpoints.s}) {
-    -webkit-clip-path: polygon(100% 0, 0 0, 0 90%, 50% 100%, 100% 90%);
-    clip-path: polygon(100% 0, 0 0, 0 90%, 50% 100%, 100% 90%);
-  }
-  height: 300px;
-  @media (max-width: ${props => props.theme.breakpoints.m}) {
-    height: 300px;
-  }
-  @media (max-width: ${props => props.theme.breakpoints.s}) {
-    height: 275px;
-  }
+  background-repeat: no-repeat;
+  background-position: 50% 80%;
+  height: 250px;
   position: relative;
   overflow: hidden;
+  z-index: 100;
+
+  @media screen and (min-width: 768px){
+    top:  0;
+    left: 0;
+    height: 100%;
+    width: 35%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+
+    .d-md-block{
+      position: absolute;
+       bottom: 0 !important;
+       color: #fff !important;
+    }
+
+  }
 `
 
 const Text = styled.div`
-  color: ${props => props.theme.colors.white.base};
   z-index: 0;
   position: absolute;
   top: 50%;
@@ -34,32 +44,47 @@ const Text = styled.div`
   flex-direction: column;
   text-align: center;
   width: 100%;
-  max-width: ${props => props.theme.layout.base};
+  max-width: 70rem;
   padding: 0 2rem;
   margin-bottom: 3rem;
   align-items: center;
+
+  h1{
+    font-family: "Playfair Display",serif;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+  }
+
+  @media screen and (min-width: 768px){
+    top: 25%;
+  }
+
+ 
 `
 
 const Subtitle = styled.p`
-  max-width: 650px;
-  color: ${props => props.theme.colors.white.light};
+  color: #ececec !important;
+  text-shadow: 10px 2px 5px #111;
 `
 
-const Header = ({ children, title, date, cover, headerImage }) => (
+const MainHeader = ({ children, title, date, cover, headerImage }) => (
   <Wrapper headerImage={headerImage}>
-    <Img fluid={cover || {} || [] || ""} />
     <Text>
+    <img src={headerLogo} alt="header-logo"/>
       <h1>{title}</h1>
       <h3>{date}</h3>
-
       {children && <Subtitle>{children}</Subtitle>}
-    </Text>
+      </Text>
+      <div className="d-none d-md-block">
+      <Footer/>
+      </div>
   </Wrapper>
 )
 
-export default Header
+export default MainHeader
 
-Header.propTypes = {
+MainHeader.propTypes = {
   children: PropTypes.oneOfType([PropTypes.node, PropTypes.bool]),
   cover: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
   date: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
@@ -71,7 +96,7 @@ Header.propTypes = {
   ]),
 }
 
-Header.defaultProps = {
+MainHeader.defaultProps = {
   children: false,
   cover: false,
   date: false,

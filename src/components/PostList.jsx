@@ -5,119 +5,91 @@ import styled from "@emotion/styled"
 import PropTypes from "prop-types"
 import theme from "../../config/theme"
 
-const Wrapper = styled.article`
-  margin-bottom: 2rem;
-  position: relative;
-  z-index: 100;
-  border-radius: ${props => props.theme.borderRadius.default};
-  box-shadow: ${props => props.theme.shadow.feature.small.default};
-  transition: ${props => props.theme.transitions.boom.transition};
-  height: 17rem;
-  flex-basis: calc(99.9% * 1 / 3 - 2.5rem);
-  max-width: calc(99.9% * 1 / 3 - 2.5rem);
-  width: calc(99.9% * 1 / 3 - 2.5rem);
-
-  &:hover {
-    box-shadow: ${props => props.theme.shadow.feature.small.hover};
-    transform: scale(1.04);
-  }
-
-  @media (max-width: 1000px) {
-    flex-basis: calc(99.9% * 1 / 2 - 1rem);
-    max-width: calc(99.9% * 1 / 2 - 1rem);
-    width: calc(99.9% * 1 / 2 - 1rem);
-    height: 18rem;
-  }
-
-  @media (max-width: 700px) {
-    flex-basis: 100%;
-    max-width: 100%;
+const Wrapper = styled.div`
+  margin: 10px 0;
+  border-radius: 2px;
+  max-width: 100%;
     width: 100%;
-    height: 15rem;
-  }
+    height: 200px;
 `
 
-const StyledLink = styled(Link)`
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 1rem;
-  z-index: 3;
-  border-radius: ${props => props.theme.borderRadius.default};
-  &:after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0.3) 50%,
-      rgba(0, 0, 0, 0.7) 80%,
-      rgba(0, 0, 0, 0.8) 100%
-    );
-    z-index: -10;
-    border-radius: ${theme.borderRadius.default};
-    transition: opacity ${theme.transitions.default.duration};
+const StyledLink = styled.div`
+position: relative;
+  display: block;
+  margin: 15px 0;
+  width: 100%;
+  z-index: 50;
+
+  @media screen and (min-width: 768px){
+    margin: 15px;
   }
+
 `
 
 const Image = styled.div`
-  position: absolute;
-  top: 0;
-  overflow: hidden;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  z-index: 1;
-  object-fit: cover;
-  border-radius: ${props => props.theme.borderRadius.default};
-  img {
-    border-radius: ${props => props.theme.borderRadius.default};
+  display: block;
+  margin: 20px 0;
+  border-radius: 2px;
+
+  img{ 
+    width: 100% !important;
+    height: 200px !important;
+    border-radius: 2px;
+
   }
-  > div {
-    position: static !important;
-  }
-  > div > div {
-    position: static !important;
-  }
+
 `
 
 const Info = styled.div`
-  color: ${props => props.theme.colors.white.light};
-  margin: 0 1rem 1.25rem 1.25rem;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+display: block;
+p{
+  text-align: center;
+  word-spacing: 3px;
+}
+
+p a{
+  color: #DAB768;
+  letter-spacing: 5px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+p a:hover{
+  text-decoration: underline #111;
+}
+
+p span{
+border-bottom: 1px dashed #555;
+}
 `
 
-const Title = styled.h2`
-  margin-bottom: 0.6rem;
+const Title = styled.h1`
+text-align: center;
+
+&:hover{
+  text-decoration: underline;
+}
+
+
 `
 
-const PostList = ({ cover, path, date, title, excerpt }) => (
+const PostList = ({ cover, path, date, title, excerpt, author, subtitle }) => (
+  <div className="d-block d-lg-flex m-auto">
   <Wrapper>
     <Image>
       <Img fluid={cover} />
-    </Image>
-    <StyledLink to={path}>
-      <Info>
-        <span>{date}</span>
-        <Title>{title}</Title>
-        <span>{excerpt}</span>
-      </Info>
-    </StyledLink>
+      </Image>
+   
   </Wrapper>
+   <StyledLink>
+   <Info>
+     {/* <span>{date}</span> */}
+     <Title ><Link to={path}>{title}</Link></Title>
+     <p>Posted on <span>{date}</span> by <Link to="/about">{author}</Link></p>
+     <p>{excerpt}</p>
+     {/* <span>{excerpt}</span> */}
+   </Info>
+ </StyledLink>
+ </div>
 )
 
 export default PostList
@@ -128,4 +100,6 @@ PostList.propTypes = {
   excerpt: PropTypes.string,
   date: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
+  subtitle: PropTypes.string.isRequired,
 }

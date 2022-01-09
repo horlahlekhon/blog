@@ -5,7 +5,7 @@ import PropTypes from "prop-types"
 const Wrapper = styled.div`
   text-align: ${props => (props.center ? "center" : "")};
   margin: auto;
-  padding: 3rem 1.5rem;
+  padding: 30px;
   width: 60%;
   max-width: ${props => props.theme.layout[props.type]};
   height: 100%;
@@ -20,13 +20,13 @@ const Wrapper = styled.div`
   }
 `
 
-const BG = styled.section`
-  background-image: url(${props => props.postImage});
-  position: relative;
-  width: 100%;
-  height: 100%;
+// const BG = styled.section`
+//   background-image: url(${props => props.postImage});
+//   position: relative;
+//   width: 100%;
+//   height: 100%;
 
-`
+// `
 
 const Container = ({ children, type, className, center }) => (
   <Wrapper className={className} type={type} center={center}>

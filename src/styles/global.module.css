@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+
+.body {
+    margin: 0;
+   font-family: "Playfair Display", serif, 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #333333;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.body h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display", serif;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.body h1{
+    font-family: "Playfair Display", serif;
+    color:#333333;
+    font-size: 24px;
+}
+
+.body a, p{
+    font-weight: 400;
+    color:#333333;
+}
+
+.body a{
+    font-family: "Playfair Display", serif;
+}
+
+.body p{
+    font-size: 14px;
+    font-weight: 300;
+    color: #63686e;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+@media screen and (min-width: 992px){
+    .body h1{
+        font-size: 30px;
+    }
+  }

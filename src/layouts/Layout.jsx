@@ -8,8 +8,10 @@ import { SEO } from "components"
 import { Footer, NavBar } from "layouts"
 import theme from "../../config/theme"
 import headroom from "../styles/headroom"
+import * as styles from '../styles/global.module.css'
 
 const Layout = ({ children }) => (
+  <div className={styles.body}>
   <ThemeProvider theme={theme}>
     <Fragment>
       <Global
@@ -54,15 +56,26 @@ const Layout = ({ children }) => (
             font-family: ${theme.fontFamily.heading};
           }
 
+          .row>*:first-child{
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+
           ${headroom}
         `}
       />
       <SEO />
+      <div className="d-block d-md-none">
       <NavBar />
+      </div>
       {children}
+      <div className="d-block d-md-none">
       <Footer />
+      </div>
     </Fragment>
   </ThemeProvider>
+  </div>
 )
 
 export default Layout

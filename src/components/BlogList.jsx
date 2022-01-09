@@ -6,104 +6,93 @@ import Img from "gatsby-image"
 import { TagsBlock } from "components"
 import { Container } from "layouts"
 
-const Wrapper = styled.article`
-  margin: 0 3rem;
+const Wrapper = styled.div`
+  margin: 10px 0;
+  border-radius: 2px;
+  max-width: 100%;
+    width: 100%;
+    height: 200px;
+`
+
+const StyledLink = styled.div`
+position: relative;
+  display: block;
+  margin: 15px 0;
+  width: 100%;
+  z-index: 50;
+
+  @media screen and (min-width: 768px){
+    margin: 15px;
+  }
+
 `
 
 const Image = styled.div`
-  margin: auto;
-  position: relative;
-  box-shadow: ${props => props.theme.shadow.feature.small.default};
-  transition: ${props => props.theme.transitions.boom.transition};
-  border-radius: ${props => props.theme.borderRadius.default};
-  min-height: 300px;
-  img {
-    border-radius: ${props => props.theme.borderRadius.default};
+  display: block;
+  margin: 20px 0;
+  border-radius: 2px;
+
+  img{ 
+    width: 100% !important;
+    height: 200px !important;
+    border-radius: 2px;
+
   }
-  &:hover {
-    box-shadow: ${props => props.theme.shadow.feature.small.hover};
-    transform: scale(1.04);
-  }
-  a {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    border-radius: ${props => props.theme.borderRadius.default};
-    > div {
-      position: static !important;
-    }
-    > div > div {
-      position: static !important;
-    }
-    &:focus {
-      outline: none;
-      box-shadow: 0 0 0 5px ${props => props.theme.colors.primary.dark};
-    }
-  }
-  flex-basis: 100%;
-  max-width: 100%;
-  width: 100%;
-  @media (max-width: 800px) {
-    flex-basis: 100%;
-    max-width: 100%;
-    width: 100%;
-    margin-bottom: 1.5rem;
-  }
-  @media (max-width: 500px) {
-    min-height: 200px;
-  }
+
 `
 
-const Information = styled.div`
-  h1 {
-    font-size: 2rem;
-    display: inline-block;
-    color: ${props => props.theme.colors.black.base};
-    transition: all ${props => props.theme.transitions.default.duration};
-    &:hover {
-      color: ${props => props.theme.colors.primary.base};
-    }
-  }
+const Info = styled.div`
+display: block;
+p{
   text-align: center;
-  flex-basis: 100%;
-  max-width: 100%;
-  width: 100%;
-  @media (max-width: 800px) {
-    flex-basis: 100%;
-    max-width: 100%;
-    width: 100%;
-  }
-`
+  word-spacing: 3px;
+}
 
-const Date = styled.div`
-  margin-top: 1rem;
-  color: ${props => props.theme.colors.black.lighter};
+p a{
+  color: #DAB768;
+  letter-spacing: 5px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+p a:hover{
+  text-decoration: underline #111;
+}
+
+p span{
+border-bottom: 1px dashed #555;
+}
 `
 
 const Title = styled.h1`
-  margin: 0;
+text-align: center;
+
+&:hover{
+  text-decoration: underline;
+}
 `
 
-const BlogList = ({ path, cover, title, date, excerpt, tags }) => (
-  <Container>
-    <Wrapper>
-      <Image>
-        <Link to={path} title={title}>
-          <Img fluid={cover} />
-        </Link>
+const BlogList = ({ path, cover, title, date, excerpt, tags, author }) => (
+
+      <div className="d-block d-lg-flex m-auto">
+  <Wrapper>
+    <Image>
+      <Img fluid={cover} />
       </Image>
-      <Information>
-        <Date>{date}</Date>
-        <Link to={path}>
-          <Title>{title}</Title>
-        </Link>
-        <TagsBlock list={tags} />
-        {excerpt}
-      </Information>
-    </Wrapper>
-  </Container>
+   
+  </Wrapper>
+   <StyledLink>
+   <Info>
+     {/* <span>{date}</span> */}
+     <Title ><Link to={path}>{title}</Link></Title>
+     <p>Posted on <span>{date}</span> by <Link to="/about">{author}</Link></p>
+     <p>{excerpt}</p>
+     <TagsBlock list={tags} />
+     {/* <span>{excerpt}</span> */}
+   </Info>
+ </StyledLink>
+ </div>
+
+
 )
 
 export default BlogList
@@ -115,4 +104,5 @@ BlogList.propTypes = {
   date: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   tags: PropTypes.array.isRequired,
+  author: PropTypes.array.isRequired,
 }

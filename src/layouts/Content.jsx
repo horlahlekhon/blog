@@ -4,6 +4,7 @@ import PropTypes from "prop-types"
 import prism from "../styles/prism"
 
 const Wrapper = styled.div`
+margin: 1rem 0;
   ${prism};
   p,
   li {

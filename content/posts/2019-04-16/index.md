@@ -5,82 +5,82 @@ date: 2019-04-16 10:01:19
 title: "A Matriarch of Purple"
 author: Lekan Adebari
 published: true
-tags: ['poetry', writting]
+tags: ['poetry', writing]
 subtitle: "A song of praise"
 excerpt_separator: <!--more-->
 category: rants
 ---
 
 
-<p><em>Last night I made a vow not to touch the lines.</em></p>
+*Last night I made a vow not to touch the lines.*
 
-<p><em>A day before I was tied to a thread, a life.</em></p>
+*A day before I was tied to a thread, a life.*
 
-<p><em>And tomorrow might be the day I grow old.</em></p>
+*And tomorrow might be the day I grow old.*
 
-<p><em>But today shan't pass , a day I sing your praises.</em></p>
+*But today shan't pass , a day I sing your praises.*
 <!--more-->
 <br>
 
-<p><em>I don't sing a fancy of omnipotence!</em></p>
+*I don't sing a fancy of omnipotence!*
 
-<p><em>Neither do I not say nay, when omniscience shows marvel!</em></p>
+*Neither do I not say nay, when omniscience shows marvel!*
 
-<p><em>But when a mortal weeps....</em></p>
+*But when a mortal weeps....*
 
-<p><em>Maybe when she endure patriarchy to have you old!</em></p>
+*Maybe when she endure patriarchy to have you old!*
 
-<p><em>Or when her urethra creaks as you stiff your tiny head</em></p>
+*Or when her urethra creaks as you stiff your tiny head*
 
-<p><em>to walk the Earth...</em></p>
-
-<br>
-
-<p><em>Let's sing the song of mortality !</em></p>
-
-<p><em>Let the mage of the south beats upon the lushes..</em></p>
-
-<p><em>On this day,</em></p>
-
-<p><em>between the legs of oppressive patriarchs lays their egotistical bowl of manliness!</em></p>
+*to walk the Earth...*
 
 <br>
 
-<p><em>And even the doublet scrotum takes a break of solitude!</em></p>
+*Let's sing the song of mortality !*
 
-<p><em>To praise a mortal whose pain shine and shield forth life!</em></p>
+*Let the mage of the south beats upon the lushes..*
 
-<p><em>To hail a mortal whose tears pounds off infirmities</em></p>
+*On this day,*
 
-<p><em>And whose love kills all ills.....</em></p>
-
-<br>
-
-<p><em>If I hadn't live last night , through her!</em></p>
-
-<p><em>The day after wouldn't be the day I change the world!</em></p>
-
-<p><em>If I hadn't walk toschool in her heels</em></p>
-
-<p><em>Tomorrow wouldn't even worth the thirst!</em></p>
+*between the legs of oppressive patriarchs lays their egotistical bowl of manliness!*
 
 <br>
 
-<p><em>If I have promised the sea not to write it's peaceful praise again!</em></p>
+*And even the doublet scrotum takes a break of solitude!*
 
-<p><em>Forgive me o! Principality and honour my gem in their precious affinity !</em></p>
+*To praise a mortal whose pain shine and shield forth life!*
 
-<p><em>On that day with a blank vista that always open to life!</em></p>
+*To hail a mortal whose tears pounds off infirmities*
 
-<p><em>She sat down besides me as I lay hibiscus on my father's grave ...</em></p>
+*And whose love kills all ills.....*
 
-<p><em>With my face buried deep into her Bossom!</em></p>
+<br>
 
-<p><em>Her love never makes me feel a trifle of loss!</em></p>
+*If I hadn't live last night , through her!*
 
-<p><em>If I and you would one day be the world !</em></p>
+*The day after wouldn't be the day I change the world!*
 
-<p><em>Then, shouldn't today praise our mother than a saviour in the sky!</em></p>
+*If I hadn't walk to school in her heels*
+
+*Tomorrow wouldn't even worth the thirst!*
+
+<br>
+
+*If I have promised the sea not to write it's peaceful praise again!*
+
+*Forgive me o! Principality and honour my gem in their precious affinity !*
+
+*On that day with a blank vista that always open to life!*
+
+*She sat down besides me as I lay hibiscus on my father's grave ...*
+
+*With my face buried deep into her Bossom!*
+
+*Her love never makes me feel a trifle of loss!*
+
+*If I and you would one day be the world !*
+
+*Then, shouldn't today praise our mother than a saviour in the sky!*
 
 
 #poetics

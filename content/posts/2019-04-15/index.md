@@ -5,56 +5,39 @@ date: 2019-04-15 15:15:19
 title: "A love of null identity"
 author: Lekan Adebari
 published: true
-tags: ['poetry', writting]
+tags: ['poetry', writing]
 subtitle: "An afire to douse death"
 excerpt_separator: <!--more-->
 category: rants
 ---
 
-<p><em>On a nigh beneath the beach !</em></p>
+*On a nigh beneath the beach !*
 
-<br>
+*On a rye beside the reach!*
 
-<p><em>On a rye beside the reach!</em></p>
-
-<br>
-
-<p><em>We waddle in game; our tail wiggle in sync!</em></p>
+*We waddle in game; our tail wiggle in sync!*
 <!--more-->
 <br>
 
-<p><em>My puddled beak picks the daunty oysters as , my dainty feather warp in cascade!</em></p>
+*My puddled beak picks the daunty oysters as , my dainty feather warp in cascade!*
+<br>
+
+*The kilt nudity of your voice makes me stand my off!*
+
+*I am a Robin and she is an Egret!*
+
+*I fall in love with the long-beak of hers!*
 
 <br>
 
-<p><em>The kilt nudity of your voice makes me stand my off!</em></p>
+*The crazy sonority of my noise! Raise the lazy hair on her nape!*
 
-<br>
+*My love Is over the ridge!*
 
-<p><em>I am a Robin and she is an Egret!</em></p>
+*On a 32volts my wing hang! The tension became high!*
 
-<br>
+*Sweet Egret cry a lagoon! My dream end in death!*
 
-<p><em>I fall in love with the long-beak of hers!</em></p>
-
-<br>
-
-<p><em>The crazy sonority of my noise! Raise the lazy hair on her nape!</em></p>
-
-<br>
-
-<p><em>My love Is over the ridge!</em></p>
-
-<br>
-
-<p><em>On a 32volts my wing hang! The tension became high!</em></p>
-
-<br>
-
-<p><em>Sweet Egret cry a lagoon! My dream end in death!</em></p>
-
-<br>
-
-<p><em>But, lo! Sweet usurper of nature; I woke up as this!</em></p>
+*But, lo! Sweet usurper of nature; I woke up as this!*
 
 **A NULL.....**

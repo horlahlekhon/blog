@@ -8,8 +8,10 @@ import { SEO } from "components"
 import { Footer, NavBar } from "layouts"
 import theme from "../../config/theme"
 import headroom from "../styles/headroom"
+import * as styles from '../styles/global.module.css'
 
 const PostLayout = ({ children, postImage }) => (
+  <div className={styles.body}>
   <ThemeProvider theme={theme}>
     <Fragment>
       <Global
@@ -56,20 +58,30 @@ const PostLayout = ({ children, postImage }) => (
             font-family: ${theme.fontFamily.heading};
           }
 
+          
+          .row>*:first-child{
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+
           ${headroom}
         `}
       />
       <SEO />
+      <div className="d-block d-md-none">
       <NavBar />
+      </div>
       {children}
       <Footer />
     </Fragment>
   </ThemeProvider>
+  </div>
 )
 
 export default PostLayout
 
 PostLayout.propTypes = {
   children: PropTypes.oneOfType([PropTypes.array, PropTypes.node]).isRequired,
-  postImage: PropTypes.string.isRequired,
+
 }
