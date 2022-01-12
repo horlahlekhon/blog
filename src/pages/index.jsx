@@ -36,6 +36,7 @@ display: inline-block;
 
 const Index = ({ data }) => {
   const { edges } = data.allMarkdownRemark
+
   return (
     <Layout>
       <Helmet title={"Olalekan - Adebari"} />
@@ -66,7 +67,7 @@ const Index = ({ data }) => {
         })}
       </PostWrapper>
       </div>
-      <Container className="d-none d-md-block" fluid>
+      <Container className="d-none d-md-block" fluid style={{padding: '0 0 !important'}}>
   <Row>
     <Col md={4}> 
     <MainHeader title="Home sweet home" headerImage={indexHeader}>Soon, we shall all understand; there is so much bugs

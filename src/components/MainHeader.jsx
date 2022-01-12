@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "@emotion/styled"
-import Img from "gatsby-image"
 import PropTypes from "prop-types"
 import headerLogo from '../images/header-logo.png'
 import Footer from "../layouts/Footer"
@@ -9,11 +8,12 @@ import Footer from "../layouts/Footer"
 const Wrapper = styled.header`
   background-image: url(${props => props.headerImage});
   background-repeat: no-repeat;
-  background-position: 50% 80%;
+  background-position: center center;
+  background-size: cover;
   height: 250px;
   position: relative;
   overflow: hidden;
-  z-index: 100;
+  z-index: 1000;
 
   @media screen and (min-width: 768px){
     top:  0;
@@ -60,12 +60,18 @@ const Text = styled.div`
     top: 25%;
   }
 
+  @media screen and (min-width: 992px){
+    h1{
+      font-size: 40px !important;
+    }
+  }
+
  
 `
 
 const Subtitle = styled.p`
   color: #ececec !important;
-  text-shadow: 10px 2px 5px #111;
+  text-shadow: 3px 2px 5px #111;
 `
 
 const MainHeader = ({ children, title, date, cover, headerImage }) => (

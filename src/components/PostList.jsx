@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 import Img from "gatsby-image"
 import styled from "@emotion/styled"
 import PropTypes from "prop-types"
-import theme from "../../config/theme"
 
 const Wrapper = styled.div`
   margin: 10px 0;
@@ -82,11 +81,9 @@ const PostList = ({ cover, path, date, title, excerpt, author, subtitle }) => (
   </Wrapper>
    <StyledLink>
    <Info>
-     {/* <span>{date}</span> */}
      <Title ><Link to={path}>{title}</Link></Title>
      <p>Posted on <span>{date}</span> by <Link to="/about">{author}</Link></p>
      <p>{excerpt}</p>
-     {/* <span>{excerpt}</span> */}
    </Info>
  </StyledLink>
  </div>

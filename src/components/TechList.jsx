@@ -1,9 +1,8 @@
 import React from "react"
 import styled from "@emotion/styled"
 import PropTypes from "prop-types"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import Img from "gatsby-image"
-import { TagsBlock } from "components"
 
 const Wrapper = styled.div`
   margin: 10px 0;
@@ -15,10 +14,13 @@ const Wrapper = styled.div`
 
 const StyledLink = styled.div`
 position: relative;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 15px 0;
   width: 100%;
   z-index: 50;
+
 
   @media screen and (min-width: 768px){
     margin: 15px;
@@ -70,9 +72,9 @@ text-align: center;
 }
 `
 
-const BlogList = ({ path, cover, title, date, excerpt, tags, author }) => (
+const TechList = ({cover, title, date, path, languages, database }) => (
 
-      <div className="d-block d-lg-flex m-auto">
+<div className="d-block d-lg-flex m-auto">
   <Wrapper>
     <Image>
       <Img fluid={cover} />
@@ -81,12 +83,11 @@ const BlogList = ({ path, cover, title, date, excerpt, tags, author }) => (
   </Wrapper>
    <StyledLink>
    <Info>
-     {/* <span>{date}</span> */}
-     <Title ><Link to={path}>{title}</Link></Title>
-     <p>Posted on <span>{date}</span> by <Link to="/about">{author}</Link></p>
-     <p>{excerpt}</p>
-     <TagsBlock list={tags} />
-     {/* <span>{excerpt}</span> */}
+     {/* the path will link to the website You hosted already I.E Live WebApps */}
+     <Title><a href={`https://${path}/`}target="_blank" rel="noopener noreferrer">{title}</a></Title>
+     <p>Made live on <span>{date}</span> </p>
+     <p>Languages: {languages}</p>
+     <p>Database: {database}</p>
    </Info>
  </StyledLink>
  </div>
@@ -94,14 +95,14 @@ const BlogList = ({ path, cover, title, date, excerpt, tags, author }) => (
 
 )
 
-export default BlogList
+export default TechList
 
-BlogList.propTypes = {
+TechList.propTypes = {
   cover: PropTypes.object.isRequired,
   path: PropTypes.string.isRequired,
-  excerpt: PropTypes.string,
+  languages: PropTypes.string,
+  database: PropTypes.string,
   date: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  tags: PropTypes.array.isRequired,
-  author: PropTypes.array.isRequired,
+  
 }

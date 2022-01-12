@@ -61,20 +61,9 @@ const Post = ({ data, pageContext }) => {
   const { html, frontmatter, excerpt } = data.markdownRemark
   const { date, title, tags, subtitle, path, description, author } = frontmatter
   const image = frontmatter.cover.childImageSharp.fluid
-//   const PostImage = styled.div`
-//         background: url(${image.src}) no-repeat fixed center;
-//         height: 100%;
-//         width: 100%;
-//         position: absolute;
-//         `
-//   const PostImageWrapper = styled.div`
-//     position: relative;
-//     width: 956px;
-//     height: 400px;
-//     display: flex;
-//     justify-content: center;
-// `
-  const Title = styled.h1`
+
+
+const Title = styled.h1`
     text-align: center;
     font-size: 28px !important;
 
@@ -82,20 +71,23 @@ const Post = ({ data, pageContext }) => {
     font-size: 44px !important;
   }
 `
-  const TitleWrapper = styled.div`
+
+const TitleWrapper = styled.div`
 display: block;
 `
-  const Subtitle = styled.div`
+
+const Subtitle = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: antiquewhite;
-p{
+
+  p{
   font-size: 16px !important;
   word-spacing: 3px;
  padding: 5px;
 
-}
+  }
 
 p:nth-child(1){
   flex: 3 0;
@@ -234,30 +226,27 @@ Post.propTypes = {
 // duotone: { highlight: "#386eee", shadow: "#2323be", opacity: 60 }
 
 export const query = graphql`
-  query($pathSlug: String!) {
-    markdownRemark(frontmatter: { path: { eq: $pathSlug } }) {
-      html
-      frontmatter {
-        date(formatString: "MMMM DD, YYYY")
-        title
-        tags
-        subtitle
-        author
-        cover {
-          childImageSharp {
-            fluid(
-              maxWidth: 1920
-              quality: 90
-              
-            ) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
-            resize(width: 956, height: 400, quality: 90) {
-              src
-            }
+query ($pathSlug: String) {
+  markdownRemark(frontmatter: {path: {eq: $pathSlug}, category: {eq: "rants"}}) {
+    html
+    frontmatter {
+      date(formatString: "MMMM DD, YYYY")
+      title
+      tags
+      subtitle
+      author
+      cover {
+        childImageSharp {
+          fluid(maxWidth: 1920, quality: 90) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+          resize(width: 956, height: 400, quality: 90) {
+            src
           }
         }
       }
     }
   }
+}
+
 `

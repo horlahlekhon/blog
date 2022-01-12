@@ -51,7 +51,7 @@ a {
 margin: 0px 10px;
 }
 `
-const About = center => (
+const About = (center) => (
   <Layout>
     <Helmet title={"About - Adebari Olalekan"} />
     <div className="d-block d-md-none">
@@ -62,7 +62,7 @@ const About = center => (
         </PageNameHolder>
     <AboutContainer>
       <h2>
-        Hi, 👋 I'm Adebari Olalekan Oluwaseun
+        Hi, <span role="img" aria-label="emoji">👋</span> I'm Adebari Olalekan Oluwaseun
       </h2>
       <Row>
         <Col>
@@ -126,7 +126,7 @@ const About = center => (
         </PageNameHolder>
         <AboutContainer>
       <h2>
-        Hi, 👋 I'm Adebari Olalekan Oluwaseun
+        Hi,<span role="img" aria-label="emoji">👋</span> I'm Adebari Olalekan Oluwaseun
       </h2>
       <Row>
         <Col md="5">

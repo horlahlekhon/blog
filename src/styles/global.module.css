@@ -43,9 +43,47 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+.body form input{
+    padding: 16px 22px;
+    height: 56px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #212529;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.body form textarea{
+    padding: 16px 22px;
+    height: 178px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #212529;
+    font-family: 'Open Sans', sans-serif;
+}
+.body form button{
+    background-color: #2b2b2b;
+    padding: 12px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 15px 0;
+}
+
+.body form button:hover{
+    background: #383838;
+}
 
 @media screen and (min-width: 992px){
     .body h1{
         font-size: 30px;
+        
+    }
+
+    .body form{
+        margin:0 70px;
     }
   }

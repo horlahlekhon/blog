@@ -1,17 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "@emotion/styled"
-// import logo from '../../static/logo/header-logo.png';
-import GitHubIcon from "@material-ui/icons/GitHub"
-import TwitterIcon from "@material-ui/icons/Twitter"
 import{ Navbar, Container } from 'react-bootstrap'
 
-
-// const StyledLink = styled(Link)`
-//   display: flex;
-//   font-weight: 700;
-//   align-items: center;
-// `
 
 const Nav = styled.nav`
     display: flex;
@@ -44,13 +35,13 @@ span{
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    padding: 0.5rem 4rem;
+    justify-content: center;
+    padding: 0.5rem 0rem;
 
     span{
     display: block;
-    height: 7px;
-    width: 7px;
+    height: 6px;
+    width: 6px;
     border-radius: 10px;
     background: #DAB768;
     }
@@ -58,6 +49,8 @@ span{
     a{
       position: relative;
       transition: all 2s;
+      margin: 0 11px;
+
     }
 
     a:after{
@@ -76,7 +69,7 @@ span{
 
 
   a:hover:after {
-  width: 50%;
+  width: 30%;
   animation: fill 1s forwards;
   -webkit-animation: fill 1s forwards;
   -moz-animation: fill 1s forwards;
@@ -86,24 +79,11 @@ span{
 
 
 `
-// const Name = styled.p`
-//   font-weight: 500;
-//   font-size: 1.1rem;
-//   margin-top: 35px;
-//   align-items: center;
-//   a {
-//     color: ${props => props.theme.colors.white.base};
-//     margin-left: 2rem;
-//     transition: all ${props => props.theme.transitions.default.duration};
-//     &:hover {
-//       color: ${props => props.theme.colors.white.grey};
-//     }
-//   }
 
-// `
 
 const NavBar = () => (
-  <Navbar expand="lg" style={{backgroundColor: '#fff', borderBottom: '1px solid #F5F5F5' }}>
+  <Navbar expand="lg" style={{backgroundColor: '#fff', borderBottom: '1px solid #F5F5F5', position: 'sticky',
+  top: '0', zIndex: '100' }}>
   <Container>
     <Navbar.Brand className="d-block d-lg-none"><Link to="/" style={{fontFamily: '"Playfair Display",serif',
     color: '#333',
@@ -113,33 +93,22 @@ const NavBar = () => (
       <Nav>
      <Link to="/">Home</Link>
      <span></span>
+     <Link to="/categories">Categories</Link>
+     <span></span>
+     <Link to="/gallery">Gallery</Link>
+     <span></span>
      <Link to="/dev">Dev</Link>
      <span></span>
      <Link to="/rants">Rants</Link>
      <span></span>
      <Link to="/about">About</Link>
+     <span></span>
+     <Link to="/contact">Contact</Link>
       </Nav>
     </Navbar.Collapse>
   </Container>
 </Navbar>
-  // <Headroom calcHeightOnResize disableInlineStyles>
-  //   {/* <StyledLink to="/"> */}
-  //   {/* <img src={logo} alt="Gatsby Logo" /> */}
-  //   <Nav><Link to="/"> Olalekan Adebari</Link></Nav>
-  //   {/* </StyledLink> */}
-  //   <Nav>
-  //     <Link to="/">Home</Link>
-  //     <Link to="/dev">Dev</Link>
-  //     <Link to="/rants">Rants</Link>
-  //     <Link to="/about">About</Link>
-  //     <a href="https://github.com/horlahlekhon">
-  //       <GitHubIcon />
-  //     </a>
-  //     <a href="https://mobile.twitter.com/1nesAndZer0s">
-  //       <TwitterIcon />
-  //     </a>
-  //   </Nav>
-  // </Headroom>
+
 )
 
 export default NavBar

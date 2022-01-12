@@ -20,14 +20,6 @@ const Wrapper = styled.div`
   }
 `
 
-// const BG = styled.section`
-//   background-image: url(${props => props.postImage});
-//   position: relative;
-//   width: 100%;
-//   height: 100%;
-
-// `
-
 const Container = ({ children, type, className, center }) => (
   <Wrapper className={className} type={type} center={center}>
     {children}
