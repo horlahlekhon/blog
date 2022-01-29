@@ -7,12 +7,17 @@ import profile from "../images/profile.jpg"
 import { Create, Email, GitHub, LinkedIn, Twitter } from "@material-ui/icons"
 import MainHeader from "../components/MainHeader"
 import beach from "../images/beach.jpg"
-import { Container, Col, Row, ListGroup, ListGroupItem } from "react-bootstrap"
+import { Container, Col, Row, ListGroup, ListGroupItem, Form, Button } from "react-bootstrap"
 import NavBar from "../layouts/NavBar"
 
 
 const AboutContainer = styled.div`
   padding: 30px;
+
+  p{
+    font-size: 16px;
+}
+
 
   h2{
     text-transform: uppercase;
@@ -24,6 +29,14 @@ const AboutContainer = styled.div`
     margin: 10px auto;
     border-radius: 50%;
   }
+
+  @media screen and (min-width: 768px){
+
+   
+  form{
+      margin:0 35px;
+  }
+}
 `
 
 const PageNameHolder = styled.div`
@@ -108,6 +121,28 @@ const About = (center) => (
           </SocialList>
         </Col>
       </Row>
+
+      <PageNameHolder>
+           <span>Talk to me!</span>
+        </PageNameHolder>
+        <p>Hi <span role="img" aria-label="emoji">👋</span>, It is me again Lekan, so fill the form if you want to talk about business, Please <span role="img" aria-label="emoji">🙂</span>nly business! Thank You...</p>
+        <Form>
+  <Form.Group className="mb-3 test-firstname" controlId="formBasicName">
+    <Form.Control type="name" placeholder="John Doe" />
+  </Form.Group>
+
+  <Form.Group className="mb-3 test-email" controlId="formBasicEmail">
+    <Form.Control type="email" placeholder="johndoe@gmail.com" />
+  </Form.Group>
+
+
+  <Form.Group className="test-txtarea">
+    <Form.Control as="textarea" placeholder="So what do you wanna talk about?"/>
+  </Form.Group>
+  <Button variant="dark" type="submit">
+    Submit
+  </Button>
+</Form>
     </AboutContainer>
     </div>
   
@@ -173,10 +208,33 @@ const About = (center) => (
 
         </Col>
       </Row>
+
+      <PageNameHolder>
+           <span>Talk to me!</span>
+        </PageNameHolder>
+        <p>Hi <span role="img" aria-label="emoji">👋</span>, It is me again Lekan, so fill the form if you want to talk about business, Please <span role="img" aria-label="emoji">🙂</span>nly business! Thank You...</p>
+        <Form>
+  <Form.Group className="mb-3" controlId="formBasicName">
+    <Form.Control type="name" placeholder="John Doe" />
+  </Form.Group>
+
+  <Form.Group className="mb-3" controlId="formBasicEmail">
+    <Form.Control type="email" placeholder="johndoe@gmail.com" />
+  </Form.Group>
+
+
+  <Form.Group>
+    <Form.Control as="textarea" placeholder="So what do you wanna talk about?"/>
+  </Form.Group>
+  <Button variant="dark" type="submit">
+    Submit
+  </Button>
+</Form>
       </AboutContainer>
       </div>
       </Col>
   </Row>
+
 
 </Container>
   </Layout>

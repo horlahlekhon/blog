@@ -4,7 +4,7 @@ author : Lekan Adebari
 subtitle: "An Ensembre of Beauty"
 date:   2019-04-17 16:25:19
 category: rants
-cover: ./yoruba-woman.jpg
+cover: ./yoruba_woman.jpg
 excerpt_separator: <!--more-->
 tags: [poetry, writing]
 path: /rants/yoruba-women

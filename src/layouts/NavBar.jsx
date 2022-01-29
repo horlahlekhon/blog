@@ -102,8 +102,6 @@ const NavBar = () => (
      <Link to="/rants">Rants</Link>
      <span></span>
      <Link to="/about">About</Link>
-     <span></span>
-     <Link to="/contact">Contact</Link>
       </Nav>
     </Navbar.Collapse>
   </Container>

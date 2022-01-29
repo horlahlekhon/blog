@@ -1,13 +1,14 @@
 ---
 title:  "He who Borrows another day"
 author : Lekan Adebari
+cover: ./he_who_borrows_another_day.jpg
 subtitle: "An unkempt tomorrow"
-date:   2019-04-18 10:01:19
+date: 2019-04-18 10:01:19
 category: rants
-cover: ./he-who-borrows-another-day.jpg
 excerpt_separator: <!--more-->
 tags: [poetry, writing]
 path: /rants/he-who-borrows-another-day
+published: true
 ---
 
 *He was sleeping on the floor* \

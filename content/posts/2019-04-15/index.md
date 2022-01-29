@@ -1,6 +1,6 @@
 ---
 path: "/rants/null-identity"
-cover: "./a-love-of-null-identity.jpg"
+cover: "./a_love_of_null_identity.jpg"
 date: 2019-04-15 15:15:19
 title: "A love of null identity"
 author: Lekan Adebari
